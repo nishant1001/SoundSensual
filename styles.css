@@ -1,0 +1,58 @@
+body {
+  margin: 0;
+  overflow: hidden;
+}
+
+.rows-container {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  height: 100vh; /* Set container height to 100% of viewport height */
+  width: 110vw;
+}
+
+.row {
+  display: flex;
+  overflow: hidden;
+  white-space: nowrap; /* Prevent buttons from wrapping to the next line */
+  transition: transform 0.5s ease; /* Add smooth transition effect */
+}
+
+.row1 {
+  display: flex;
+  overflow: hidden;
+  white-space: nowrap; /* Prevent buttons from wrapping to the next line */
+  transition: transform 0.5s ease; /* Add smooth transition effect */
+}
+.row2 {
+  display: flex;
+  overflow: hidden;
+  white-space: nowrap; /* Prevent buttons from wrapping to the next line */
+  transition: transform 0.5s ease; /* Add smooth transition effect */
+}
+.row3 {
+  display: flex;
+  overflow: hidden;
+  white-space: nowrap; /* Prevent buttons from wrapping to the next line */
+  transition: transform 0.5s ease; /* Add smooth transition effect */
+}
+.row4 {
+  display: flex;
+  overflow: hidden;
+  white-space: nowrap; /* Prevent buttons from wrapping to the next line */
+  transition: transform 0.5s ease; /* Add smooth transition effect */
+}
+
+.button {
+  width: 10vw;
+  height: 10vw;
+  margin: 5px;
+  border: none;
+  border-radius: 50%;
+  transition: transform 0.5s ease; /* Add smooth transition effect */
+}
+
+.button:hover {
+  transform: scale(1.06);
+  opacity: 0.5;
+}
