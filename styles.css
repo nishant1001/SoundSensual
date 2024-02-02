@@ -10,13 +10,12 @@ body {
   display: flex;
   flex-direction: column;
   overflow: hidden;
-  width: 150vw;
+  width: 200%;
 }
 
 .row1, .row2, .row3, .row4 {
   display: flex;
   overflow: hidden;
-  gap:5px;
   white-space: nowrap; /* Prevent buttons from wrapping to the next line */
   transition: transform 0.5s ease; /* Add smooth transition effect */
 }
