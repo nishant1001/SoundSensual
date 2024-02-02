@@ -3,6 +3,7 @@ body {
   overflow: hidden;
   align-items: center;
   justify-content: center;
+  height: 100vh;
 }
 
 .rows-container {
