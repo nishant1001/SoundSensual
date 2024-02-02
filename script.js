@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", function() {
   // To add colors to the buttons automatically
-  const availableColors = ["red", "green", "grey", "lightgreen", "lightyellow", "gold", "salmon", "indigo", "magenta", "teal", "darkred", "blue", "yellow", "orange", "pink", "pink", "cyan", "lightblue", "lavender", "skyblue", "violet", "turquoise"];
+  const availableColors = ["lime", "deeppink", "deepskyblue", "hotpink", "lawngreen", "limegreen", "darkorchid", "aquamarine", "aqua", "greenyellow", "crimson", "mistyrose", "red", "green", "grey", "lightgreen", "lightyellow", "gold", "salmon", "indigo", "magenta", "teal", "darkred", "blue", "yellow", "orange", "pink", "pink", "cyan", "lightblue", "lavender", "skyblue", "violet", "turquoise"];
   const buttons = document.querySelectorAll('.button');
 
   // Iterate through each button and assign a random color
