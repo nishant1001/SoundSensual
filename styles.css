@@ -10,7 +10,7 @@ body {
   display: flex;
   flex-direction: column;
   overflow: hidden;
-  width: 200%;
+  width: 4000px;
 }
 
 .row1, .row2, .row3, .row4 {
