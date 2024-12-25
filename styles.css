@@ -110,13 +110,43 @@ body {
   background-color: #F56565;
 }
 
+/* Gender button styles */
 .gender-button {
-  background-color: #4A90E2;
+  padding: 0.75rem 2rem;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+  width: 150px;
+}
+
+/* Male button specific style */
+#maleButton {
+  background-color: #4A90E2; /* Royal Blue */
   color: white;
 }
 
-.gender-button:hover {
-  background-color: #357ABD;
+#maleButton:hover {
+  background-color: #66A5FF; /* Darker blue */
+  transform: translateY(-2px);
+}
+
+/* Female button specific style */
+#femaleButton {
+  background-color: #FF69B4; /* Hot Pink */
+  color: white;
+}
+
+#femaleButton:hover {
+  background-color: #FF9ED3; /* Darker pink */
+  transform: translateY(-2px);
+}
+
+/* Active state for both buttons */
+.gender-button:active {
+  transform: translateY(1px);
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
 }
 
 .hidden {
@@ -158,5 +188,10 @@ body {
 @media (hover: none) {
   .button:hover {
     transform: none;
+  }
+
+  .gender-button {
+    width: 100%;
+    margin: 0.4rem 0;
   }
 }

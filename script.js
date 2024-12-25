@@ -36,14 +36,14 @@ document.addEventListener("DOMContentLoaded", function() {
 
   // Gender selection handlers
   document.getElementById('maleButton').addEventListener('click', function() {
-    selectedAudioFolder = 'female-audios'; // Males get female audio
+    selectedAudioFolder = 'male-audios';
     totalAudioFiles = 28;
     completeVerification();
   });
 
   document.getElementById('femaleButton').addEventListener('click', function() {
-    selectedAudioFolder = 'male-audios'; // Females get male audio
-    totalAudioFiles = 11;
+    selectedAudioFolder = 'female-audios'; 
+    totalAudioFiles = 28;
     completeVerification();
   });
 
