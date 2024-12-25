@@ -1,0 +1,162 @@
+body {
+  margin: 0;
+  overflow: hidden;
+  align-items: center;
+  justify-content: center;
+  background-color: #1E1E1E;
+}
+
+.rows-container {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  padding: 10px 10px 10px 10px;
+  width: 20000px;
+  opacity: 0.3;
+  transition: opacity 0.3s ease;
+}
+
+.rows-container.verified {
+  opacity: 1;
+}
+
+.row1, .row2, .row3, .row4, .row5 {
+  display: flex;
+  overflow: hidden;
+  white-space: nowrap;
+  transition: transform 0.5s ease;
+}
+
+.button {
+  width: 160px;
+  height: 160px;
+  margin: 5px;
+  border: none;
+  border-radius: 50%;
+  transition: transform 0.5s ease;
+}
+
+.button:hover {
+  transform: scale(1.06);
+  opacity: 0.5;
+}
+
+/* Modal Styles */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-content {
+  background-color: white;
+  padding: 2rem;
+  border-radius: 20px;
+  max-width: 500px;
+  width: 90%;
+  text-align: center;
+}
+
+.modal-title {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  margin-top: 0rem;
+  color: #333;
+}
+
+.modal-text {
+  margin-bottom: 1.5rem;
+  color: #555;
+  line-height: 1.5;
+}
+
+.modal-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.modal-button {
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
+}
+
+.primary-button {
+  background-color: #9F7AEA;
+  color: white;
+}
+
+.primary-button:hover {
+  background-color: #805AD5;
+}
+
+.secondary-button {
+  background-color: #FC8181;
+  color: white;
+}
+
+.secondary-button:hover {
+  background-color: #F56565;
+}
+
+.gender-button {
+  background-color: #4A90E2;
+  color: white;
+}
+
+.gender-button:hover {
+  background-color: #357ABD;
+}
+
+.hidden {
+  display: none;
+}
+
+/* Mobile responsive styles */
+@media screen and (max-width: 768px) {
+  .modal-content {
+    width: 80%;
+    padding: 1.5rem;
+  }
+
+  .modal-title {
+    font-size: 1.4rem;
+  }
+
+  .modal-text {
+    font-size: 0.9rem;
+  }
+
+  .modal-buttons {
+    flex-direction: column;
+    gap: 0.8rem;
+  }
+
+  .modal-button {
+    width: 100%;
+    padding: 0.8rem;
+  }
+  
+  .gender-button {
+    width: 100%;
+    margin: 0.4rem 0;
+  }
+}
+
+/* Touch device optimizations */
+@media (hover: none) {
+  .button:hover {
+    transform: none;
+  }
+}
